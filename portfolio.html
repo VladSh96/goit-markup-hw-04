@@ -24,10 +24,10 @@
         <nav>
             <ul class="site-nav list">
                 <li class="item">
-                    <a href="./index.html" class="link ">Студія</a>
+                    <a href="./index.html" class="link active">Студія</a>
                 </li>
                 <li class="item">
-                    <a href="./portfolio.html" class="link active">Портфоліо</a>
+                    <a href="./portfolio.html" class="link">Портфоліо</a>
                 </li>
                 <li class="item">
                     <a href="" class="link">Контакти</a>
@@ -35,8 +35,16 @@
             </ul>
         </nav>
         <ul class="contacts list">
-            <li class="item"><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a> </li>
-            <li class="item"><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a> </li>
+            <li class="item"><a href="mailto:info@devstudio.com" class="contacts-link">
+                    <svg class="envelope">
+                        <use href="./images/icons.svg#envelope" width="16" height="12"></use>
+                    </svg>
+                    info@devstudio.com</a> </li>
+            <li class="item"><a href="tel:+380961111111" class="contacts-link">
+                    <svg class="smartphone">
+                        <use href="./images/icons.svg#smartphone" width="10" height="16"></use>
+                    </svg>
+                    +38 096 111 11 11</a> </li>
         </ul>
     </div>
 </header>
@@ -150,8 +158,9 @@
 </main>
 
     <!-- Футер -->
-    <footer>
-        <div class="container">
+<footer>
+    <div class="container footer">
+        <div>
             <a href="./index.html" class="logo">Web<span class="footer-logo">Studio</span></a>
             <address class="footer-address">
                 м. Київ, пр-т Лесі Українки
@@ -161,6 +170,40 @@
                 </ul>
             </address>
         </div>
-    </footer>
+        <div class="invite">
+            <h3 class="invite-title">приєднуйтесь</h3>
+            <ul class="social list">
+                <li class="item ">
+                    <a href="" class="">
+                        <svg class="icon">
+                            <use href="./images/icons.svg#instagram" width="20" height="20"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="">
+                        <svg class="icon">
+                            <use href="./images/icons.svg#twitter" width="20" height="20"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="">
+                        <svg class="icon">
+                            <use href="./images/icons.svg#facebook" width="20" height="20"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="" class="">
+                        <svg class="icon">
+                            <use href="./images/icons.svg#linkedin" width="20" height="20"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

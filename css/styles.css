@@ -27,6 +27,9 @@ body{
 h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
+a {
+    display: block;
+}
 .list {
     margin-top: 0;
     margin-bottom: 0;
@@ -57,6 +60,7 @@ img {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 .button.primary{
     color: var(--white-color);
@@ -73,6 +77,15 @@ img {
     color: var(--white-color);
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.hero-button {
+    padding: 10px 24px;
+}
+.hero-button:hover,
+.hero-button:focus{
+    padding: 10px 32px;
+
+    background-color: #188CE8;
 }
 /* Header */
 .header{
@@ -128,7 +141,21 @@ img {
 .contacts{
     display: flex;
     margin-left: auto;
+    align-items: center;
+    fill: currentColor;
+    
 }
+.envelope{
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+.smartphone{
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+
 .contacts > .item:not(:last-child){
     margin-right: 40px;
 }
@@ -139,7 +166,10 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
+
 .contacts .contacts-link:hover,
 .contacts .contacts-link:focus {
     color: var(--accent-color);
@@ -150,8 +180,16 @@ img {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
 
-    background-color:var(--secondary-bgc);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, .4)),
+    url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #C4C4C4;
 }
 .hero-title {
     margin-left: auto;
@@ -192,6 +230,21 @@ img {
 }
 .features>.item:not(:last-child){
     margin-right: 30px;
+}
+.icon{
+    width: 70px;
+    height: 70px;
+}
+.feature .wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background: #F5F4FA;
+    border-radius: 4px;
 }
 
 .features .title{
@@ -255,7 +308,66 @@ img {
     font-size: 16px;
     line-height: 1.18;   
 }
+.social{
+    display: flex;
+    margin-top: 16px;
+    fill: currentColor;
+    align-items: center;
+    justify-content: center;
+}
+.social .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    fill: #AFB1B8;
+}
+.social .item:hover{
+    background-color: var(--accent-color);
+    fill: #EEEEEE;
+}
+.social .item:not(:last-child){
+    margin-right: 10px;
+}
+.social .icon{
+    width: 20px;
+    height: 20px;
+}
+/* Clients */
+.clients{
+    display: flex;
+    margin-top: 16px;
+    align-items: center;
+    justify-content: center;
+}
+.clients .icon{
+    width: 106px;
+    height: 60px;
+}
+.clients .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    fill: #AFB1B8;
+
+}
+.clients .item:hover {
+    border-color: var(--accent-color);
+    fill:var(--accent-color);
+}
+.clients .item:not(:last-child) {
+    margin-right: 30px;
+}
 /* footer */
+.footer{
+    display: flex;
+}
 footer{
     background-color: var(--secondary-bgc);
     padding-top: 60px;
@@ -293,7 +405,25 @@ footer{
 .contacts-footer > .item:not(:first-child) {
     margin-top: 12px;
 }
-
+.invite{
+    margin-left: 70px;
+}
+.invite-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+.invite .item {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--white-color);
+}
+.footer{
+    display: flex;
+    align-items:baseline;
+}
 /* Portfolio */
 .filter{
     display: flex;
@@ -336,4 +466,7 @@ footer{
 }
 .work-link {
     text-decoration: none;
+}
+.items > .item:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
