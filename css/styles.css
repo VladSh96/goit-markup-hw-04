@@ -303,6 +303,7 @@ img {
 }
 .team .text{
     text-align: center;
+    margin-bottom: 16px;
 
     font-weight: 400;
     font-size: 16px;
@@ -310,21 +311,22 @@ img {
 }
 .social{
     display: flex;
-    margin-top: 16px;
     fill: currentColor;
     align-items: center;
     justify-content: center;
+
+    fill: #AFB1B8;
 }
-.social .item{
+.social .link{
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    fill: #AFB1B8;
 }
-.social .item:hover{
+.social .link:hover,
+.social .link:focus{
     background-color: var(--accent-color);
     fill: #EEEEEE;
 }
@@ -338,7 +340,6 @@ img {
 /* Clients */
 .clients{
     display: flex;
-    margin-top: 16px;
     align-items: center;
     justify-content: center;
 }
@@ -346,7 +347,8 @@ img {
     width: 106px;
     height: 60px;
 }
-.clients .item{
+
+.clients .link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -355,9 +357,9 @@ img {
     width: 170px;
     height: 92px;
     fill: #AFB1B8;
-
 }
-.clients .item:hover {
+.clients .link:hover,
+.clients .link:focus {
     border-color: var(--accent-color);
     fill:var(--accent-color);
 }
@@ -416,7 +418,7 @@ footer{
     color: var(--white-color);
     margin-bottom: 20px;
 }
-.invite .item {
+.invite .link {
     background-color: rgba(255, 255, 255, 0.1);
     fill: var(--white-color);
 }
@@ -467,6 +469,7 @@ footer{
 .work-link {
     text-decoration: none;
 }
-.items > .item:hover{
+.work-link:hover,
+.work-link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
